@@ -20,11 +20,11 @@ from telegram.ext import (
 # ----------------------------------------------------
 # CONFIGURATION (Loaded from Environment Variables)
 # ----------------------------------------------------
-TELEGRAM_BOT_TOKEN = os.environ.get("TELEGRAM_BOT_TOKEN")
+TELEGRAM_BOT_TOKEN = os.environ.get("8855589778:AAFHaWxgmF6padGMiWA0eALJ7CW3Lg68xdo")
 GEMINI_API_KEY = os.environ.get("AQ.Ab8RN6IzKCYxmAF2ninHRktKKNyKPS3j3pM2IgGIiq_4oKWC_Q")
 
 # Initialize Gemini API
-genai.configure(api_key=AQ.Ab8RN6IzKCYxmAF2ninHRktKKNyKPS3j3pM2IgGIiq_4oKWC_Q)
+genai.configure(api_key=GEMINI_API_KEY)
 model = genai.GenerativeModel("gemini-1.5-flash")
 
 # Memory store for ongoing conversations
